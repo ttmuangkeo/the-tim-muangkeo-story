@@ -4,3 +4,6 @@
 
 <img src="intro.jpg" alt="intro picure">
 <img src="intro2.jpg" alt="">
+
+<h3>Enjoy this interactive story!<h3>
+	<p>Coming Soon.</p>
