@@ -7,40 +7,45 @@ var stars2 = document.getElementById('stars2');
 var stars3 = document.getElementById('stars3');
 var title = document.getElementById('title');
 var startMenu = document.getElementById('start-menu');
+var aboutMe = document.getElementById('about-me');
+var s = skrollr.init();
 
 
 var start = function() {
     for (var i = 0; i < spanText.length; i++) {
-        if (spanText[i].innerHTML !== '') {
+        if (spanText[i].innerHTML != '') {
             spanText[i].innerHTML = '';
-            begin.style.display = 'none';
+            startBtn.style.display = 'none';
+            begin.removeAttribute('class');
         };
     };
+    setTimeout(function() {
+        spanText[0].classList.add('slideInRight');
+        spanText[0].innerHTML = 'Hi there!';
+    }, 1500);
+    setTimeout(function() {
+        spanText[1].innerHTML = 'This is my life story';
+    }, 3000);
+    setTimeout(function() {
+        spanText[2].innerHTML = 'Click Begin and Scroll Down!';
+    }, 5000);
 };
-var text1 = setInterval(function() {
-    spanText[0].innerHTML = 'Hi There!'
-}, 1500);
-var text2 = setInterval(function() {
-    spanText[1].innerHTML = 'Welcome to my Life`s Story'
-}, 3500);
-var text3 = setInterval(function() {
-    spanText[2].innerHTML = 'test text goes here';
-}, 6500);
-
-function stopInterval() {
-    clearInterval(text1);
-    clearInterval(text2);
-    clearInterval(text3);
-};
-
 
 
 var intro = function() {
     startMenu.removeAttribute('id');
-    for (var i = 0; i <= spanText.length; i++) {
+    for (var i = 0; i < spanText.length; i++) {
         spanText[i].remove();
-        stopInterval()
-    }
+    };
+    stars.removeAttribute('id');
+    stars2.removeAttribute('id');
+    stars3.removeAttribute('id');
+    title.removeAttribute('id');
+    spanText[0].remove();
+    aboutMe.classList.remove('hidden');
+    aboutMe.classList.add('fadeIn')
+    begin.classList.add('hidden');
 }
 
+startBtn.addEventListener("click", start);
 begin.addEventListener("click", intro);

@@ -7,29 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Tim Muangkeo Story</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
 </head>
 
 <body>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <header id="start-menu">
+    <header id="start-menu" class="animated fadeIn">
         <div id='stars'></div>
         <div id='stars2'></div>
         <div id='stars3'></div>
-        <div id='title'>
-                    <embed id='bg-music' src="bg-music/bensound-anewbeginning.mp3" type="" width="1" height="1">
+        <div id='title'">
               <span>The</span>
-              <br>
-              <span>Tim Muangkeo</span>
-              <br>
-              <span>Story</span>
-              <br>
-            <button id="begin">Begin</button>
+                <br> 
+                <span>Tim Muangkeo</span>
+               <br> 
+               <span>Story</span>
+               <br>
+              <embed id='bg-music' src="bg-music/butuntilthen.mp3" type="audio/mp3" width="1" height="1">
+               <hr>
+            <button id="start" class="animated zoomIn">start</button>
+            <button id="begin" class="hidden">begin</button>
         </div>
     </header>
+    <section id="about-me" class="hidden animated">
+
+
+
+
+          <div class="scroll"  data-0="opacity: 1;" 
+        data-250="opacity: 0;">
+        Enough with the introduction! Where should we start?
+      </div>
+
+
+
+
+
+
+  <div class="scroll"  data-300="opacity: 0;" 
+        data-400="opacity: 1.5;" 
+        data-600="opacity: 0;">Probably the beginning, duh</div>
+
+  <div class="scroll"  data-800="opacity: 0;" 
+        data-1000="opacity: 1.5; " 
+        data-2000="" 
+        data-2200="opacity: 0;">Let me tell you something about myself ..</div>
+
+  <div class="scroll"  data-2400="opacity: 0;top: 50%;" 
+        data-2600="opacity: 1.5; " 
+        data-3000="" 
+        data-3200="opacity: 0; top: 70%;">I am a briliant artist!</div>
+
+  <div class="scroll"  data-3400="opacity: 0;top: 0%;" 
+        data-3600="opacity: 1.5; top: 50%;" 
+        data-4000="margin-left: 0px;" 
+        data-4200="opacity: 0; margin-left: -200px;">I know how to draw:</div>
+
+  <div class="scroll"  data-4400="opacity: 0;margin-left: 200px;"  
+        data-4600="opacity: 1;margin-left: 0px;"  
+        data-5400="" 
+        data-6000="opacity: 0;margin-left: -200px; margin-top: -100px;"><img src="images/img1.jpg"><br><br>
+          <h1 data-4700="opacity: 0"
+                data-5100="opacity: 1">( if you are not sure, this is a cat )</h1>
+              </div>
+              <div class="scroll"  data-6400="opacity: 0;margin-left: -200px;"  
+        data-6600="opacity: 1;margin-left: 0px;"  
+        data-7400="" 
+        data-8000="opacity: 0;margin-left: 200px;"><img src="images/img3.jpg"><br><br>
+          <h1 data-6700="opacity: 0"
+                data-7100="opacity: 1">( mouse, awsome isn't it? )</h1>
+              </div>
+
+  <div class="scroll"  data-8400="opacity: 0;margin-left: 200px;"  
+        data-8600="opacity: 1;margin-left: 0px;"  
+        data-9400="" 
+        data-10000="opacity: 0;margin-left: -200px;"><img src="images/img2.jpg"><br><br>
+          <h1 data-8700="opacity: 0"
+                data-9100="opacity: 1">( fish,&nbsp; just look at that beauty! )</h1>
+              </div>
+
+  <div class="scroll" data-10000="opacity: 0;"
+        data-10200="opacity: 1;"
+        data-10600=""
+        data-10800="opacity: 0;" >ohh? not like Picasso?</div>
+
+  <div class="scroll" data-11000="opacity: 0;"
+        data-11200="opacity: 1;"
+        data-11600=""
+        data-11800="opacity: 0;" >May I show you something else?</div>
+    </section>
     <!-- Latest compiled and minified CSS & JS -->
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
     <script src="main.js"></script>
 </body>
 
