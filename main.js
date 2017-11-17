@@ -8,6 +8,7 @@ var stars3 = document.getElementById('stars3');
 var title = document.getElementById('title');
 var startMenu = document.getElementById('start-menu');
 var aboutMe = document.getElementById('about-me');
+var header = document.getElementsByTagName('header');
 var s = skrollr.init();
 
 
@@ -33,18 +34,10 @@ var start = function() {
 
 
 var intro = function() {
-    startMenu.removeAttribute('id');
-    for (var i = 0; i < spanText.length; i++) {
-        spanText[i].remove();
-    };
-    stars.removeAttribute('id');
-    stars2.removeAttribute('id');
-    stars3.removeAttribute('id');
-    title.removeAttribute('id');
-    spanText[0].remove();
     aboutMe.classList.remove('hidden');
     aboutMe.classList.add('fadeIn')
-    begin.classList.add('hidden');
+    header[0].remove();
+
 }
 
 startBtn.addEventListener("click", start);
