@@ -17,7 +17,7 @@ var start = function() {
             spanText[i].innerHTML = '';
             startBtn.style.display = 'none';
             begin.removeAttribute('class');
-            begin.disabled = true;
+            // begin.disabled = true;
         };
     };
     setTimeout(function() {
@@ -28,7 +28,7 @@ var start = function() {
     }, 3000);
     setTimeout(function() {
         spanText[2].innerHTML = 'Click Begin and Scroll Down!';
-        begin.disabled = false;
+        // begin.disabled = false;
     }, 5000);
 };
 var intro = function() {
