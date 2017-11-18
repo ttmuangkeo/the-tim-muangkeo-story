@@ -9,38 +9,37 @@ var title = document.getElementById('title');
 var startMenu = document.getElementById('start-menu');
 var aboutMe = document.getElementById('about-me');
 var header = document.getElementsByTagName('header');
+var restartBtn = document.getElementById('restart-button');
 var s = skrollr.init();
-
-
 var start = function() {
     for (var i = 0; i < spanText.length; i++) {
         if (spanText[i].innerHTML != '') {
             spanText[i].innerHTML = '';
             startBtn.style.display = 'none';
             begin.removeAttribute('class');
-            // begin.disabled = true;
+            begin.disabled = true;
         };
     };
     setTimeout(function() {
-        spanText[0].classList.add('slideInRight');
         spanText[0].innerHTML = 'Hi there!';
     }, 1500);
     setTimeout(function() {
-        spanText[1].innerHTML = 'This is my life story';
+        spanText[1].innerHTML = 'Get to know me.';
     }, 3000);
     setTimeout(function() {
         spanText[2].innerHTML = 'Click Begin and Scroll Down!';
-        // begin.disabled = false;
+        begin.disabled = false;
     }, 5000);
 };
-
-
 var intro = function() {
+    startMenu.classList.add('hidden');
     aboutMe.classList.remove('hidden');
-    aboutMe.classList.add('fadeIn')
-    header[0].remove();
-
+    aboutMe.classList.add('fadeIn');
 }
-
+var restart = function() {
+    startMenu.classList.remove('hidden');
+    aboutMe.classList.add('hidden');
+}
 startBtn.addEventListener("click", start);
 begin.addEventListener("click", intro);
+restartBtn.addEventListener("click", restart)
