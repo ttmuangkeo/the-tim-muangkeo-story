@@ -185,7 +185,7 @@ img {
     font-size: 12pt;
     letter-spacing: 5px;
   }
-  #lifelongtitle {
+  #lifelongtitle, #jake, #joe {
     font-size: 17pt;
   }
   #lifelong {
@@ -195,9 +195,6 @@ img {
   #leader {
     font-size: 10pt;
     letter-spacing: 5px;
-  }
-  #joe {
-    font-size: 17pt;
   }
 }
 
