@@ -4,6 +4,7 @@
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 #about-me {
@@ -194,6 +195,9 @@ img {
   #leader {
     font-size: 10pt;
     letter-spacing: 5px;
+  }
+  #joe {
+    font-size: 17pt;
   }
 }
 
