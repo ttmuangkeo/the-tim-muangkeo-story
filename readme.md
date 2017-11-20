@@ -5,7 +5,10 @@
 <img src="images/intro.jpg" alt="intro picure">
 <img src="images/intro2.jpg" alt="">
 <img src="images/intro3.jpg" alt="">
+<hr>
+<h3>Mobile Friendly!</h3>
+<img src="images/mobile1.jpg" alt="">
+<img src="images/mobile2.jpg" alt="">
 
-<h3>Enjoy this interactive story!<h3>
 <h3>More Content</h3>
 <h4>Coming Soon..</h4>
