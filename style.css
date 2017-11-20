@@ -155,3 +155,51 @@ img {
     transform: translateY(-2000px);
   }
 }
+
+
+@media screen and (max-width: 400px) {
+  #start-menu {
+    height: 700px;
+  }
+  #about-me {
+    height: 700px;
+  }
+  #title {
+  font-size: 20pt;
+  }
+  button {
+    background-color: black;
+    width: 70%;
+  }
+  .scroll {
+  font-size: 10pt;
+  }
+  img {
+    width: 70%;
+  }
+  ul {
+    list-style: circle;
+  }
+  #grit {
+    font-size: 12pt;
+    letter-spacing: 5px;
+  }
+  #lifelongtitle {
+    font-size: 17pt;
+  }
+  #lifelong {
+    font-size: 10pt;
+    letter-spacing: 5px;
+  }
+  #leader {
+    font-size: 10pt;
+    letter-spacing: 5px;
+  }
+}
+
+
+
+
+
+
+
