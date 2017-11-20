@@ -8,7 +8,6 @@
 <hr>
 <h3>Mobile Friendly!</h3>
 <img src="images/mobile1.png" alt="">
-<img src="images/mobile2.png" alt="">
 
 <h3>More Content</h3>
 <h4>Coming Soon..</h4>
