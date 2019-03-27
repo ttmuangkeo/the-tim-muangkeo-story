@@ -17,7 +17,7 @@ var start = function() {
             spanText[i].innerHTML = '';
             startBtn.style.display = 'none';
             begin.removeAttribute('class');
-            begin.disabled = true;
+            begin.disabled = false;
         };
     };
     setTimeout(function() {

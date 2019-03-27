@@ -557,22 +557,11 @@
 }
 
 @keyframes fadeIn {
-   0%{
-    opacity: 0;
+    from {
+    opacity: 0.7;
   }
-  25% {
-    opacity: .2;
-  }
-  50% {
-    opacity: .4;
-  }
-  75% {
-    opacity: .6;
-  }
-  90% {
-    opacity: .8;
-  }
-   100%{
+
+  to {
     opacity: 1;
   }
 }
